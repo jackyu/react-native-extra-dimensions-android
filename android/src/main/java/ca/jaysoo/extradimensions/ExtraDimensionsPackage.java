@@ -13,9 +13,7 @@ import java.util.ArrayList;
 
 public class ExtraDimensionsPackage implements ReactPackage {
 
-    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-        return Arrays.asList();
-    }
+    public ExtraDimensionsPackage() {}
 
 
     @Override
@@ -26,4 +24,14 @@ public class ExtraDimensionsPackage implements ReactPackage {
 
         return modules;
     }
+
+    @Override
+    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+        return Arrays.asList();
+    }
+
+    @Override
+    public List<Class<? extends JavaScriptModule>> createJSModules() {
+        return Arrays.asList();
+
 }
